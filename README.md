@@ -14,9 +14,13 @@ to run use:
 5. put the data to the DB - rails db:seed (it will get the data from lib/seed_csv/pokemon.csv)
 
 GET /api/v1/pokemons returns all data
+
 GET /api/v1/pokemons?page=4&per_page=5 returns 5 pokemons from 4 page
+
 GET /api/v1/pokemons/2 returns 1 pokemon with id 2
+
 POST /api/v1/pokemons create new pokemon
+
 	headers:
 	Content-Type - application/json
 	body:
@@ -34,10 +38,14 @@ POST /api/v1/pokemons create new pokemon
 		"generation":1,
 		"legendary":true
 	}
+	
 DELETE /api/v1/pokemons/2 delete pokemon with id 2
+
 PUT GET /api/v1/pokemons/2 update pokemon with id 2
+
 headers:
 	Content-Type - application/json
+	
 	body:
 	{
 		"name":"pokemon new name"
